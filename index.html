@@ -5,8 +5,79 @@
 <title>MAP672 Portfolio</title>
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>    
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>    
 <style>
+    body{
+        background: #BABABA;
+        font-family: Imprima, sans-serif;
+    }
+    
+    header{
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: #8E8D8D;
+        padding: 15px 0 20px;
+        
+    }
+    
+    h1{
+        font-family: Dosis, sans-serif;
+        color: #375671;
+        width: 80%; 
+        margin: 0 auto;
+        color: #FFFFFF;
+    }
+    
+    h2{
+        font-family: Dosis, sans-serif;
+        color: #375671;
+        width: 80%; 
+        margin: 0 auto;
+        color: #FFFFFF;
+        
+    }
+    h3{
+        font-family: Dosis, sans-serif;
+        color: #003d71
+    }
+    
+    p{
+        font-size: .9em;
+        color: #375671;
+    }
+    ul{
+        list-style-type: none;
+        font-size: .9em;
+        color: #375671;
+        line-height: 1.6em;
+    }
+    a, a:visited{
+        color: #003d71;
+    }
+    
+    .project{
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+    .project-image{
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #9DA0A0;
+    }
     
 /* CSS style rules go here! */ 
 
@@ -14,8 +85,80 @@
 </head>
 
 <body>
+<header>
+    <h1> Collection of Web Maps </h1>
+    <h2> Created by Tyler Hegwood - New Maps Plus, Univeristy of Kentucky</h2>
+    </header>
+    <p></p>
+    
+    <section class="project">
+        <a href="maps/USpopdensity.pdf" > <img src="images/671L2.png" alt="population density chloropleth" class="project-image"></a>
+    <h3><a href="maps/USpopdensity.pdf" >US County Population Density Chloropleth</a></h3>
+    <p>This is a basic example of combining geographic location data with catagorical comparisons.</p>
+    <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear understanding as to what is being represented visually. </p>
+    <ul>
+        <li>See the map: <a href="maps/USpopdensity.pdf" >US Population Densities by County</a></li>
+        <li><a href="" ></a></li>
+    
+    </ul>
+</section>
+    
+<section class="project">
+    <a href="maps/Breweries.pdf" ><img src="images/671L4.png" alt="breweries hex density" class="project-image"></a>
+    <h3><a href="maps/Breweries.pdf" >Hexbin Density Map of US Breweries</a></h3>
+    <p>For when politcal boundaries just don't cut it.</p>
+    <p></p>
+    <ul>
+        <li>See the map: <a href="maps/Breweries.pdf" >US Brewery Density by 5km Hexbin</a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section>
+    
+<section class="project">
+    <a href="maps/RaiszPCT.pdf"><img src="images/671L5.png" alt="pacific crest trail Erwin Raisz" class="project-image"></a>
+    <h3><a href="maps/RaiszPCT.pdf">The Pacific Crest Trail Geo-Referenced on Basemap by Erwin Raisz</a></h3>
+    <p></p>
+    <p></p>
+    <ul>
+        <li>See the map: <a href="maps/RaiszPCT.pdf">The Pacific Crest Trail </a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section>
+    
+<section class="project">
+    <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map"><img src="images/671L8.jpg" alt="Cancer Mortality Rates by US County" class="project-image"></a>
+    <h3><a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County</a></h3>
+    <p></p>
+    <p></p>
+    <ul>
+        <li>See the Map: <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County </a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section >    
 
-    <p>Hello World! I’m going to be a portfolio page.</p>
+<section class="project">
+    <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10.png" alt="twin cities foreclosure sales" class="project-image"></a>
+    <h3><a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">Foreclosure Sale Financing in the Twin Cities: 2015</a></h3>
+    <p></p>
+    <p></p>
+    <ul>
+        <li>See the Map: <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">2015 Twin Cities Distressed Property Sales </a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section>
+    
+<section class="project">
+    <img src="images/672L9.png" alt="Power plants" class="project-image">
+    <h3><a href="" >Interactive US Nuclear, Petroluem and Hydro Plants Output Map</a></h3>
+    <p>Interactive map allows user to click to filter power plants by 500km radius visualizing output by relative circle marker radius. A popup provides the user information specific to the plant.</p>
+    <p></p>
+    <ul>
+        <li>See the map: <a href="" >US Nuclear, Petroluem and Hydro Plants Output Map</a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section>    
+    
+    
     
 </body>
 </html>
