@@ -13,7 +13,8 @@
     body{
         margin-top: 150px;
         font-family: Jura, sans-serif;
-        background:#ABABAB;
+        background-image: url(images/duluthbackground3.jpg);
+        opacity: 1;
         border-right: 50px
     }
     
@@ -25,7 +26,6 @@
         margin: 0 auto;
         background-image: url(images/DuluthBackground2.jpg);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
-        opacity: .98;
         border: 1px solid #E9E9E9;
     
 
@@ -53,28 +53,35 @@
     }
     h3{
         font-family: Jura, sans-serif;
-        color: #E9E9E9;
+        color: #3F3F3F;
         max-width: 800px
     }
     
-    p{
+    .pr{
         font-size: .9em;
         color: #3F3F3F;
-        max-width: 1200px
+        max-width: 1200px;
+        text-align: left
+    }
+    .pl{
+        font-size: .9em;
+        color: #3F3F3F;
+        max-width: 1200px;
+        text-align: right
     }
     ul{
         list-style-type: none;
         font-size: .9em;
-        color: #E9E9E9;
+        color: #3F3F3F;
         line-height: 1.6em
     }
     a, a:visited{
-        color: #E9E9E9;
+        color: #3F3F3F;
     }
     
     .project{
         width: 90%;
-        min-width: 700px;
+        min-width: 1000px;
         height: 100%;
         margin: 80px auto
     }
@@ -85,7 +92,7 @@
         
 
     }
-    .project-image{
+    .project-image1{
         width: 374px;
         height: 120px;
         background: white;
@@ -94,6 +101,24 @@
         border: 2px solid #9DA0A0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    .project-image1:hover{
+        opacity: .5
+    }
+    
+    .project-image2{
+        width: 374px;
+        height: 120px;
+        background: white;
+        float: right;
+        margin-right: 30px;
+        border: 2px solid #9DA0A0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    }
+    .project-image2:hover{
+        opacity: .5;
+        
+    }
+    
 
 
     
@@ -111,10 +136,10 @@
     <p></p>
     
     <section class="project">
-        <a href="maps/USpopdensity.pdf" > <img src="images/671L2a.png" alt="population density chloropleth" class="project-image"></a>
+        <a href="maps/USpopdensity.pdf" > <img src="images/671L2a.png" alt="population density chloropleth" class="project-image1"></a>
     <h3><a href="maps/USpopdensity.pdf" >US County Population Density Chloropleth</a></h3>
     <p>This is a basic example of combining geographic location data with catagorical comparisons.</p>
-    <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear visual representation. </p>
+    <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear visual representation. <div class="pl"></div></p>
     <ul>
         <li>See the map: <a href="maps/USpopdensity.pdf" >US Population Densities by County</a></li>
         <li><a href="" ></a></li>
@@ -123,7 +148,7 @@
 </section>
     
 <section class="project">
-    <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image"></a>
+    <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image2"></a>
     <h3><a href="maps/Breweries.pdf" >Hexbin Density Map of US Breweries</a></h3>
     <p>For when politcal boundaries just don't cut it.</p>
     <p></p>
@@ -134,9 +159,9 @@
 </section>
     
 <section class="project">
-    <a href="maps/RaiszPCT.pdf"><img src="images/671L5a.png" alt="pacific crest trail Erwin Raisz" class="project-image"></a>
+    <a href="maps/RaiszPCT.pdf"><img src="images/671L5a.png" alt="pacific crest trail Erwin Raisz" class="project-image1"></a>
     <h3><a href="maps/RaiszPCT.pdf">The Pacific Crest Trail Geo-Referenced on Basemap by Erwin Raisz</a></h3>
-    <p></p>
+    <p><div class="pl"></div></p>
     <p></p>
     <ul>
         <li>See the map: <a href="maps/RaiszPCT.pdf">The Pacific Crest Trail </a></li>
@@ -145,7 +170,7 @@
 </section>
     
 <section class="project">
-    <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map"><img src="images/671L8a.png" alt="Cancer Mortality Rates by US County" class="project-image"></a>
+    <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map"><img src="images/671L8a.png" alt="Cancer Mortality Rates by US County" class="project-image2"></a>
     <h3><a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County</a></h3>
     <p></p>
     <p></p>
@@ -156,9 +181,9 @@
 </section >    
 
 <section class="project">
-    <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10a.png" alt="twin cities foreclosure sales" class="project-image"></a>
+    <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10a.png" alt="twin cities foreclosure sales" class="project-image1"></a>
     <h3><a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">Foreclosure Sale Financing in the Twin Cities: 2015</a></h3>
-    <p></p>
+    <p>Text text textText text textText text textText text textText text textText text text<div class="pl"></div></p>
     <p></p>
     <ul>
         <li>See the Map: <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">2015 Twin Cities Distressed Property Sales </a></li>
@@ -167,7 +192,7 @@
 </section>
     
 <section class="project">
-    <a href="http://tyche87.github.io/us-power-plants/" ><img src="images/672L9a.png" alt="Power plants" class="project-image"></a>
+    <a href="http://tyche87.github.io/us-power-plants/" ><img src="images/672L9a.png" alt="Power plants" class="project-image2"></a>
     <h3><a href="http://tyche87.github.io/us-power-plants/" >Interactive US Nuclear, Petroleum and Hydro Power Plant Output Map</a></h3>
     <p>Interactive map allows user to click to filter power plants by 500km radius visualizing output by relative circle marker radius. A popup provides the user information specific to the plant.</p>
     <p></p>
