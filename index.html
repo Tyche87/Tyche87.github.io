@@ -26,9 +26,7 @@
         margin: 0 auto;
         background-image: url(images/DuluthBackground2.jpg);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 1px solid #E9E9E9;
-    
-
+        border: 1px solid #E9E9E9
     }
     
     h1{
@@ -38,9 +36,7 @@
         margin: 0 auto;
         color: #3F3F3F;
         text-align: right;
-        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
-        
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
     }
     
     h2{
@@ -54,37 +50,46 @@
     h3{
         font-family: Jura, sans-serif;
         color: #3F3F3F;
-        max-width: 800px
-    }
-    
-    .pr{
-        font-size: .9em;
-        color: #3F3F3F;
         max-width: 1200px;
-        text-align: left
     }
-    .pl{
-        font-size: .9em;
-        color: #3F3F3F;
-        max-width: 1200px;
-        text-align: right
-    }
+
     ul{
         list-style-type: none;
         font-size: .9em;
         color: #3F3F3F;
-        line-height: 1.6em
+        line-height: 1.6em;
+    }
+    p1{
+        font-size: .9em;
+        color: #3F3F3F;
+        max-width: 500px;
+        text-align: left
+    }
+    p2{
+        font-size: .9em;
+        color: #3F3F3F;
+        max-width: 400px;
+        text-align: left;
+        padding-left: 10px
+        
     }
     a, a:visited{
         color: #3F3F3F;
     }
     
     .project{
-        width: 90%;
-        min-width: 1000px;
-        height: 100%;
-        margin: 80px auto
+        width: 94%;
+        height: 250px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        margin: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid #9DA0A0;
+
     }
+    
     .project:after{
         content: "";
         display: table;
@@ -92,16 +97,16 @@
         
 
     }
-    .project-image1{
+    .project-image{
         width: 374px;
         height: 120px;
         background: white;
         float: left;
-        margin-right: 30px;
+        margin-right: 20px;
         border: 2px solid #9DA0A0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .project-image1:hover{
+    .project-image:hover{
         opacity: .5
     }
     
@@ -110,7 +115,7 @@
         height: 120px;
         background: white;
         float: right;
-        margin-right: 30px;
+        margin-right: 0px;
         border: 2px solid #9DA0A0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     }
@@ -136,10 +141,11 @@
     <p></p>
     
     <section class="project">
-        <a href="maps/USpopdensity.pdf" > <img src="images/671L2a.png" alt="population density chloropleth" class="project-image1"></a>
+        <a href="maps/USpopdensity.pdf" > <img src="images/671L2a.png" alt="population density chloropleth" class="project-image"></a>
     <h3><a href="maps/USpopdensity.pdf" >US County Population Density Chloropleth</a></h3>
-    <p>This is a basic example of combining geographic location data with catagorical comparisons.</p>
-    <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear visual representation. <div class="pl"></div></p>
+            <p>This is a basic example of combining geographic location data with catagorical comparisons.</p>
+            <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear visual representation.</p>
+        
     <ul>
         <li>See the map: <a href="maps/USpopdensity.pdf" >US Population Densities by County</a></li>
         <li><a href="" ></a></li>
@@ -148,10 +154,10 @@
 </section>
     
 <section class="project">
-    <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image2"></a>
+    <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image"></a>
     <h3><a href="maps/Breweries.pdf" >Hexbin Density Map of US Breweries</a></h3>
-    <p>For when politcal boundaries just don't cut it.</p>
-    <p></p>
+            <p>For when politcal boundaries just don't cut it.</p>
+            <p></p>
     <ul>
         <li>See the map: <a href="maps/Breweries.pdf" >US Brewery Density by 5km Hexbin</a></li>
         <li><a href="" ></a></li>
@@ -159,9 +165,9 @@
 </section>
     
 <section class="project">
-    <a href="maps/RaiszPCT.pdf"><img src="images/671L5a.png" alt="pacific crest trail Erwin Raisz" class="project-image1"></a>
+    <a href="maps/RaiszPCT.pdf"><img src="images/671L5a.png" alt="pacific crest trail Erwin Raisz" class="project-image"></a>
     <h3><a href="maps/RaiszPCT.pdf">The Pacific Crest Trail Geo-Referenced on Basemap by Erwin Raisz</a></h3>
-    <p><div class="pl"></div></p>
+    <p></p>
     <p></p>
     <ul>
         <li>See the map: <a href="maps/RaiszPCT.pdf">The Pacific Crest Trail </a></li>
@@ -170,10 +176,10 @@
 </section>
     
 <section class="project">
-    <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map"><img src="images/671L8a.png" alt="Cancer Mortality Rates by US County" class="project-image2"></a>
+    <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map"><img src="images/671L8a.png" alt="Cancer Mortality Rates by US County" class="project-image"></a>
     <h3><a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County</a></h3>
-    <p></p>
-    <p></p>
+    <p>An extension of the traditional static chloropleth with interactive elements made capable with CartoDB</p>
+    <p>With County level geographic and statistical popups a new dimension is available using CartoDB.</p>
     <ul>
         <li>See the Map: <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County </a></li>
         <li><a href="" ></a></li>
@@ -181,10 +187,10 @@
 </section >    
 
 <section class="project">
-    <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10a.png" alt="twin cities foreclosure sales" class="project-image1"></a>
+    <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10a.png" alt="twin cities foreclosure sales" class="project-image"></a>
     <h3><a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">Foreclosure Sale Financing in the Twin Cities: 2015</a></h3>
-    <p>Text text textText text textText text textText text textText text textText text text<div class="pl"></div></p>
-    <p></p>
+    <p>An animated demonstration of single family home sales sold as distressed properties within the Twin Cities of Minneapolis and St. Paul</p>
+    <p>Utilizing CartoDB's animation capabilities we are able to view accumulation of sales in geographic locations as well as take note of financing type. Paying attention to the financing used to purchase these distressed homes can elude to where owner occupied owners will settle and stabilize with vested interests in the community or investors may be focusing on harvesting rental pool. </p>
     <ul>
         <li>See the Map: <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">2015 Twin Cities Distressed Property Sales </a></li>
         <li><a href="" ></a></li>
@@ -192,10 +198,10 @@
 </section>
     
 <section class="project">
-    <a href="http://tyche87.github.io/us-power-plants/" ><img src="images/672L9a.png" alt="Power plants" class="project-image2"></a>
+    <a href="http://tyche87.github.io/us-power-plants/" ><img src="images/672L9a.png" alt="Power plants" class="project-image"></a>
     <h3><a href="http://tyche87.github.io/us-power-plants/" >Interactive US Nuclear, Petroleum and Hydro Power Plant Output Map</a></h3>
-    <p>Interactive map allows user to click to filter power plants by 500km radius visualizing output by relative circle marker radius. A popup provides the user information specific to the plant.</p>
-    <p></p>
+    <p>Interactive map allows user to click to filter power plants by 500km radius visualizing output by relative circle marker radius. </p>
+    <p>A Javascript comprised infrastructure produces web interactivity that is functional, efficient and just plain neat! This map allows the user to select a geographic region and discover what sources of power are within 500km. Getting deeper into locational technicality, once the 500km radius is established, click a marker to learn the exact distance from the desired click point. The markers are sized relative to each plant's power output in megawatts. With just a glance it is easy to see where the greatest output of power comes from in the U.S. The data for this map was sourced from the U.S. Energy Information Administration (eia.gov).</p>
     <ul>
         <li>See the map: <a href="http://tyche87.github.io/us-power-plants/" >US Nuclear, Petroleum and Hydro Plants Output Map</a></li>
         <li><a href="" ></a></li>
