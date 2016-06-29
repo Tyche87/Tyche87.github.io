@@ -8,68 +8,81 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>    
 <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Jura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
 
 <style>
     body{
         margin-top: 150px;
         font-family: Jura, sans-serif;
-        background-image: url(images/duluthbackground3.jpg);
-        opacity: 1;
+        background-image: url(images/Duluthbackground4.jpg);
+        background-attachment: fixed;
+        opacity: .8;
     }
     
     header{
         position: fixed;
+        display: block;
         width: 100%;
         top: 0px;
         height: 120px;
         margin: 0 auto;
-        background-image: url(images/DuluthBackground2.jpg);
+        background-image: url(images/DuluthBackground4.jpg);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 1px solid #E9E9E9
+        
     }
     
     h1{
-        font-family: Jura, sans-serif;
-        position: 5px;
-        width: 70%; 
-        margin: 0 auto;
-        color: #3F3F3F;
-        text-align: right;
-        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+        font-family: Londrina Shadow, cursive;
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 20px;
+        width: 100%;
+        color: #4D4D4D;
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        line-height: .1em;
     }
     
     h2{
-        font-family: Jura, sans-serif;
-        position: 0px;
-        width: 70%; 
-        margin: 0 auto;
-        color: #3F3F3F;
-        text-align: right
+        font-family: Londrina Shadow, cursive;
+        text-align: left;
+        width: 100%;
+        margin-left: 100px;
+        padding-right: 140px;
+        line-height: 0em;
+        color: #4D4D4D;
+    
     }
     h3{
         font-family: Jura, sans-serif;
         color: #3F3F3F;
         max-width: 1200px;
     }
+    h4{
+        font-family: Londrina Shadow, cursive;
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 100px;
+        color: #4D4D4D;
+        
+    }
 
     ul{
         list-style-type: none;
-        font-size: .9em;
+        font-size: 1em;
         color: #3F3F3F;
         line-height: 1.6em;
+        padding-left: 400px;
+    
     }
-    p1{
-        font-size: .9em;
+
+    p{
+        font-size: 1em;
         color: #3F3F3F;
-        max-width: 500px;
-        text-align: left
-    }
-    p2{
-        font-size: .9em;
-        color: #3F3F3F;
-        max-width: 400px;
+        max-width: 1200px;
         text-align: left;
-        padding-left: 10px
+        padding-left: 400px;
+        padding-right: 20px;
+        text-align: justify
         
     }
     a, a:visited{
@@ -86,6 +99,7 @@
         margin: 20px;
         margin-top: 100px;
         background-color: #FFFFFF;
+        background-attachment: fixed;
         border: 1px solid #9DA0A0;
 
     }
@@ -93,16 +107,16 @@
     .project:after{
         content: "";
         display: table;
-        clear: both
+        clear: left
         
 
     }
     .project-image{
         width: 374px;
         height: 120px;
-        background: white;
         float: left;
         margin-right: 20px;
+        margin-top: 20px;
         border: 2px solid #9DA0A0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -118,19 +132,20 @@
 
 <body>
 <header>
-    <h1> Collection<br> of Maps<br></h1>
-    <h2>Created by <br>Tyler Hegwood </h2>
+    <h1> Collection of Maps<br></h1>
+    <h2>Created by Tyler Hegwood</h2>
+    <h4>Tyler.Hegwood@gmail.com</h4>
     </header>
-    <p></p>
+    
     
     <section class="project">
         <a href="maps/USpopdensity.pdf" > <img src="images/671L2a.png" alt="population density chloropleth" class="project-image"></a>
     <h3><a href="maps/USpopdensity.pdf" >US County Population Density Chloropleth</a></h3>
-            <p>This is a basic example of combining geographic location data with catagorical comparisons.</p>
+            <p>This is a basic example of combining geographic location data with catagorical data.</p>
             <p>QGIS is a powerful tool granting data visualization to the masses. The simplicity affords a clear visual representation.</p>
         
     <ul>
-        <li>See the map: <a href="maps/USpopdensity.pdf" >US Population Densities by County</a></li>
+        <li>See the map:<a href="maps/USpopdensity.pdf" >US Population Densities by County</a></li>
         <li><a href="" ></a></li>
     
     </ul>
@@ -140,7 +155,7 @@
     <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image"></a>
     <h3><a href="maps/Breweries.pdf" >Hexbin Density Map of US Breweries</a></h3>
             <p>For when politcal boundaries just don't cut it.</p>
-            <p>Qgis is capable of re-defining geographic 'bins' to more accurately visualize density groupings that may be formally bound by politics. In this particular example the hexagon is being used to demonstrate the density of breweries across the United States!</p>
+            <p>Qgis is capable of re-defining geographic 'bins' to more objectively visualize density groupings that may be formally bound by politics. In this particular example the hexagon is being used to demonstrate the density of breweries across the United States!</p>
     <ul>
         <li>See the map: <a href="maps/Breweries.pdf" >US Brewery Density by 5km Hexbin</a></li>
         <li><a href="" ></a></li>
@@ -167,7 +182,18 @@
         <li>See the Map: <a href="https://tyche87.cartodb.com/viz/b8d1a32e-e7bb-11e5-afd6-0ea31932ec1d/public_map">Cancer Mortality Rates by US County </a></li>
         <li><a href="" ></a></li>
     </ul>
-</section >    
+</section >  
+    
+<section class="project">
+    <a href="https://tyche87.cartodb.com/viz/f2631a1c-fb59-11e5-a9ad-0e787de82d45/public_map"><img src="images/Carto%20TCSS.png" alt="twin cities Sheriff Sales" class="project-image"></a>
+    <h3><a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">Sherriffs Sale Hot Spots in Hennepin County: 2015</a></h3>
+    <p>An animated demonstration of single family home sales sold at Sherriff's Sale auctions within Hennepin County, Minnesota</p>
+    <p>Utilizing CartoDB's 'Torque' animation capabilities we are able to view accumulation of sherrif's sales in geographic locations. The Torque map allows for class property characteristics based on accumulation of pixels in a geographic space. This functionality is a new and interesting way to show geographic stacking trends. </p>
+    <ul>
+        <li>See the Map: <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map">2015 Twin Cities Distressed Property Sales </a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section>
 
 <section class="project">
     <a href="https://tyche87.cartodb.com/viz/d515a192-f6ee-11e5-a522-0e5db1731f59/public_map"><img src="images/671L10a.png" alt="twin cities foreclosure sales" class="project-image"></a>
