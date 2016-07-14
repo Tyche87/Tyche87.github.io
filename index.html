@@ -12,42 +12,38 @@
 
 <style>
     body{
-        margin-top: 150px;
+        margin-top: 0px;
         font-family: Jura, sans-serif;
-        background-image: url(images/duluthbackground3.jpg);
+        background-image: url(images/Duluthbackground2.jpg);
         background-attachment: fixed;
-        opacity: 1;
+        
     }
     
     header{
-        position: fixed;
-        display: block;
+        display: inline-block;
         width: 100%;
         top: 0px;
-        height: 120px;
-        margin: 0 auto;
-        background-image: url(images/duluthbackground3.jpg);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 130px;
+        margin: 0px auto;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        
         
     }
     
     h1{
-        font-family: Londrina Shadow, cursive;
-        text-align: left;
-        margin-left: 70px;
-        margin-top: 30px;
-        width: 100%;
+        font-family: Jura, sans-serif;
+        text-align: right;
+        margin: 3% auto;
+        width: 77%;
         color: #000000;
-        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        line-height: .1em;
+        line-height: .01em;
     }
     
     h2{
-        font-family: Londrina Shadow, cursive;
-        text-align: left;
-        width: 100%;
-        margin-left: 90px;
-        padding-right: 140px;
+        font-family: Jura, sans-serif;
+        text-align: right;
+        margin: 1% auto;
+        width: 80%;
         line-height: 0em;
         color: #000000;
     
@@ -58,9 +54,10 @@
         max-width: 1200px;
     }
     h4{
-        font-family: Londrina Shadow, cursive;
-        text-align: left;
-        padding-left:120px;
+        font-family: Jura, sans-serif;
+        text-align: right;
+        margin: 2% auto;
+        width: 72%;
         color: #000000;
         line-height: .1em;
         
@@ -71,44 +68,45 @@
         font-size: 1em;
         color: #3F3F3F;
         line-height: 1.6em;
-        padding-left: 400px;
+        padding: 0px 0px 0px 400px
     
     }
 
     p{
         font-size: 1em;
         color: #3F3F3F;
-        max-width: 1200px;
-        text-align: left;
-        padding-left: 400px;
-        padding-right: 20px;
-        text-align: justify
-        
+        max-width: 95%;
+        text-align: right;
+        padding: 0px 10px 0px 400px;
+        text-align: justify;
     }
+    
+    p:after{
+        content:"";
+        display: inline-block;
+        clear:both
+    }
+    
     a, a:visited{
         color: #3F3F3F;
     }
     
     .project{
-        width: 94%;
+        width: 95%;
         height: 250px;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px 20px 20px 20px;
         text-align: left;
-        margin: 20px;
-        margin-top: 100px;
-        background-color: #FFFFFF;
+        margin: 50px auto;
         background-attachment: fixed;
         border: 1px solid #9DA0A0;
+        background-color: rgba(90, 90, 90, 0.50);
 
     }
     
     .project:after{
         content: "";
-        display: table;
-        clear: left
-        
+        display: inline-block;
+        clear: both;
 
     }
     .project-image{
@@ -117,16 +115,13 @@
         float: left;
         margin-right: 20px;
         margin-top: 20px;
-        border: 2px solid #9DA0A0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     .project-image:hover{
         opacity: .5
     }
     
     
-/* CSS style rules go here! */ 
-
 </style>
 </head>
 
