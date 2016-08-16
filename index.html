@@ -14,7 +14,7 @@
     body{
         margin-top: 0px;
         font-family: Jura, sans-serif;
-        background-image: url(images/DuluthBackground2.jpg);
+        background-image: url(images/DuluthBackground3.jpg);
         background-attachment: fixed;
         
     }
@@ -25,32 +25,48 @@
         top: 0px;
         height: 130px;
         margin: 0px auto;
-        box-shadow: 0 0 40px rgba(0,0,0,0.2);
-        
-        
+        box-shadow: 0 0 40px rgba(5,5,5,0.2);
+    }
+    footer{
+        display: inline-block;
+        width: 100%;
+        bottom: 0px;
+        height: 130px;
+        margin: 0px auto;
+        box-shadow: 0 0 40px rgba(5,5,5,0.2)
     }
     
     h1{
         font-family: Jura, sans-serif;
+        display: block;
         text-align: right;
-        margin: 3% auto;
-        width: 77%;
-        color: #000000;
-        line-height: .01em;
+        margin: 2% auto;
+        width: 78%;
+        color: #2E4172;
+    }
+    h1:after{
+        content: "";
+        display:block;
+        clear: both;
+        width: 100%;
+        height: 25%
+        border: 2px solid #9DA0A0;
     }
     
     h2{
         font-family: Jura, sans-serif;
         text-align: right;
-        margin: 1% auto;
+        display: block;
+        margin: 0% auto;
         width: 80%;
         line-height: 0em;
-        color: #000000;
+        color: #2E4172;
     
     }
     h3{
         font-family: Jura, sans-serif;
-        color: #3F3F3F;
+        display: block;
+        color: #2E4172;
         max-width: 1200px;
     }
     h4{
@@ -58,7 +74,7 @@
         text-align: right;
         margin: 2% auto;
         width: 72%;
-        color: #000000;
+        color: #2E4172;
         line-height: .1em;
         
     }
@@ -66,7 +82,7 @@
     ul{
         list-style-type: none;
         font-size: 1em;
-        color: #3F3F3F;
+        color: #2E4172;
         line-height: 1.6em;
         padding: 0px 0px 0px 400px
     
@@ -74,7 +90,7 @@
 
     p{
         font-size: 1em;
-        color: #3F3F3F;
+        color: #2E4172;
         max-width: 95%;
         text-align: right;
         padding: 0px 10px 0px 400px;
@@ -87,10 +103,12 @@
         clear:both
     }
     
-    a, a:visited{
-        color: #3F3F3F;
-    }
+    a, a:link { color: #2E4172; text-decoration: underline}
+    a, a:active { color: #2E4172; text-decoration: none }
+    a, a:visited { color: #2E4172; text-decoration: none }
+    a, a:hover { color: #7887AB; text-decoration: underline }
     
+      
     .project{
         width: 95%;
         height: 250px;
@@ -127,7 +145,7 @@
 
 <body>
 <header>
-    <h1> Collection of Maps<br></h1>
+    <h1>Collection of Maps<br></h1>
     <h2>Created by Tyler Hegwood</h2>
     <h4>Tyler.Hegwood@gmail.com</h4>
     </header>
@@ -150,7 +168,7 @@
     <a href="maps/Breweries.pdf" ><img src="images/671L4a.png" alt="breweries hex density" class="project-image"></a>
     <h3><a href="maps/Breweries.pdf" >Hexbin Density Map of US Breweries</a></h3>
             <p>For when politcal boundaries just don't cut it.</p>
-            <p>Qgis is capable of re-defining geographic 'bins' to more objectively visualize density groupings that may be formally bound by politics. In this particular example the hexagon is being used to demonstrate the density of breweries across the United States!</p>
+            <p>Qgis is capable of re-defining geographic 'bins' to more objectively visualize density groupings that may be formally bound by politics. In this particular example the hexagon is being used to demonstrate the density of breweries across North America!</p>
     <ul>
         <li>See the map: <a href="maps/Breweries.pdf" >US Brewery Density by 5km Hexbin</a></li>
         <li><a href="" ></a></li>
@@ -208,6 +226,17 @@
     <p>A Leaflet Javascript comprised infrastructure produces web interactivity that is functional, efficient and just plain neat! This map allows the user to select a geographic region and discover what sources of power are within 500km. Getting deeper into locational technicality, once the 500km radius is established, click a marker to learn the exact distance from the desired click point. The markers are sized relative to each plant's power output in megawatts. With just a glance it is easy to see where the greatest output of power comes from in the U.S. The GeoJson data for this map was sourced from the U.S. Energy Information Administration (eia.gov).</p>
     <ul>
         <li>See the map: <a href="http://tyche87.github.io/us-power-plants/" >US Nuclear, Petroleum and Hydro Plants Output Map</a></li>
+        <li><a href="" ></a></li>
+    </ul>
+</section> 
+    
+<section class="project">
+    <a href="http://tyche87.github.io/KY-housing/" ><img src="images/673L2.png" alt="Kentucky housing vacancies" class="project-image"></a>
+    <h3><a href="http://tyche87.github.io/KY-housing/" >Interactive Kentucky Housing Vacancies Map</a></h3>
+    <p>Interactive map allows user to select vacant housing data set and explore trends relative to varying perameters</p>
+    <p>A Leaflet Javascript comprised infrastructure produces web interactivity that is functional, efficient and just plain neat! This map allows the user to select a geographic region and discover what sources of power are within 500km. Getting deeper into locational technicality, once the 500km radius is established, click a marker to learn the exact distance from the desired click point. The markers are sized relative to each plant's power output in megawatts. With just a glance it is easy to see where the greatest output of power comes from in the U.S. The GeoJson data for this map was sourced from the U.S. Energy Information Administration (eia.gov).</p>
+    <ul>
+        <li>See the map: <a href="http://tyche87.github.io/KY-housing/" >Interactive Kentucky Housing Vacancies Map</a></li>
         <li><a href="" ></a></li>
     </ul>
 </section>    
